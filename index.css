@@ -1,0 +1,12 @@
+.main{
+    text-align: center;
+    margin-top:250px;
+    font-family: 微软雅黑;
+}
+.main img{
+    width: 20px;
+}
+.days{
+    font-size: 28px;
+    color: #ff36a3;
+}

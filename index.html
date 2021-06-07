@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>mine</title>
+		<link rel="icon" href="heart.png" />
+		<link rel="stylesheet" href="index.css?v=2" type="text/css" />
+
+		<style>
+			.imgsss{
+				position: absolute;
+    top: 337px;
+    left: 931px;
+    width: 22px !important;
+			}
+			.imgsssxx{
+				position: absolute;
+    top: 362px;
+    left: 1085px;
+    width: 18px !important;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="main">
+			<h1>你好，肖寒</h1>
+			<h4>Hello, Han Xiao</h4>
+			<br />
+			<br />
+			<p>We've been together for <span class="days">43</span> days.<img src="heart.png" /></p>
+			<!-- <div style="font-size: 30px;font-family: cursive;">
+				迎着<span style="color:orange">朝阳<img class="imgsss" src="太阳.png" /></span>
+				伴着<span style="color:pink">花香</span><img class="imgsssxx" src="hua.png" />
+			</div> -->
+		</div>
+	</body>
+	<script>
+		var days = parseInt((new Date() - new Date('2019-08-07'))/(24*60*60*1000)) + 1;
+		document.getElementsByClassName("days")[0].innerText = days;
+	</script>
+</html>
