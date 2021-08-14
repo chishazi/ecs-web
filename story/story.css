@@ -1,0 +1,11 @@
+.main{
+  margin: 0 auto;
+  width: 888px;
+  padding: 15px;
+}
+.title{
+  text-align: center;
+}
+.author{
+  text-align: right;
+}

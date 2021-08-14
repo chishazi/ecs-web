@@ -1,41 +1,34 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>mine</title>
-		<link rel="icon" href="heart.png" />
-		<link rel="stylesheet" href="index.css?v=2" type="text/css" />
-
-		<style>
-			.imgsss{
-				position: absolute;
-    top: 337px;
-    left: 931px;
-    width: 22px !important;
-			}
-			.imgsssxx{
-				position: absolute;
-    top: 362px;
-    left: 1085px;
-    width: 18px !important;
-			}
-		</style>
-	</head>
-	<body>
-		<div class="main">
-			<h1>你好，~</h1>
-			<h4>Hello, <del>Han Xiao</del></h4>
-			<br />
-			<br />
-			<p>We've been together for <del class="days">43</del> days.<img src="heart.png" /></p>
-			<!-- <div style="font-size: 30px;font-family: cursive;">
-				迎着<span style="color:orange">朝阳<img class="imgsss" src="太阳.png" /></span>
-				伴着<span style="color:pink">花香</span><img class="imgsssxx" src="hua.png" />
-			</div> -->
-		</div>
-	</body>
-	<script>
-		var days = parseInt((new Date() - new Date('2019-08-07'))/(24*60*60*1000)) + 1;
-		document.getElementsByClassName("days")[0].innerText = days;
-	</script>
+  <head>
+    <meta charset="utf-8">
+    <title>吃啥子</title>
+    <link rel="icon" href="img/shark.png" />
+    <link rel="stylesheet" href="css/index.css?v=3" type="text/css" />
+  </head>
+  <body>
+    <div class="main">
+      <img class="mainimg" src="img/shark.png">
+    </div>
+    <div class="menu">
+      <a href="story/liuliansubing.html" target="_blank"><img src="story/img/llsb.png"></a>
+    </div>
+    <div id="bottom_layer">
+      <p class="lh">
+        <a class="home-color" href="http://www.chishazi.club" target="_blank">吃啥子 chishazi.club</a>
+      </p>
+      <p class="lh">
+        <a class="text-color" href="https://github.com/PISERERER/ecs-web" target="_blank">GitHub</a>
+      </p>
+      <p class="lh">
+        <a class="text-color" href="https://beian.miit.gov.cn" target="_blank">京ICP备2021023315号-1</a>
+      </p>
+      <p class="lh">
+        <a class="text-color" href="disclaimer/index.html" target="_blank">免责声明</a>
+      </p>
+    </div>
+  </body>
+  <script>
+    // var days = parseInt((new Date() - new Date('2019-08-07'))/(24*60*60*1000)) + 1;
+  </script>
 </html>
