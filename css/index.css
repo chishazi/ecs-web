@@ -3,9 +3,9 @@
   margin-top:250px;
   font-family: 微软雅黑;
 }
-.main img{
-  width: 20px;
-}
+/*.main img{*/
+/*  width: 20px;*/
+/*}*/
 .days{
   font-size: 28px;
   color: #ff36a3;
@@ -58,7 +58,7 @@
   color: #4EC8D8;
 }
 .mainimg{
-  width: 88px !important;
+  height: 200px;
 }
 .menu{
   margin-top: 50px;
