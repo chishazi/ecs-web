@@ -3,24 +3,8 @@
   margin-top:250px;
   font-family: 微软雅黑;
 }
-/*.main img{*/
-/*  width: 20px;*/
-/*}*/
-.days{
-  font-size: 28px;
-  color: #ff36a3;
-}
-.imgsss{
-  position: absolute;
-  top: 337px;
-  left: 931px;
-  width: 22px !important;
-}
-.imgsssxx{
-  position: absolute;
-  top: 362px;
-  left: 1085px;
-  width: 18px !important;
+.mainimg{
+  height: 200px;
 }
 #bottom_layer{
   width: 100%;
@@ -56,14 +40,4 @@
 }
 #bottom_layer a.home-color:hover {
   color: #4EC8D8;
-}
-.mainimg{
-  height: 200px;
-}
-.menu{
-  margin-top: 50px;
-  text-align: center;
-}
-.menu img{
-  width: 40px;
 }
