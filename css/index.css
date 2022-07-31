@@ -1,4 +1,14 @@
+body{
+  margin: 0;
+}
+.background-style{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
 .main{
+  width: 100%;
+  position: absolute;
   text-align: center;
   margin-top:250px;
   font-family: 微软雅黑;
@@ -8,7 +18,7 @@
 }
 #bottom_layer{
   width: 100%;
-  position: fixed;
+  position: absolute;
   bottom: 0;
   left: 0;
   height: 39px;
@@ -16,7 +26,6 @@
   overflow: hidden;
   margin: 0;
   line-height: 39px;
-  background: #fff;
   text-align: center;
 }
 #bottom_layer .lh {
@@ -32,7 +41,7 @@
   font-family: fantasy;
 }
 #bottom_layer a {
-  color: #bbb;
+  color: #8d8d8d;
   text-decoration: none;
 }
 #bottom_layer a.text-color:hover {
