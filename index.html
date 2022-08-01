@@ -8,8 +8,8 @@
     <script type="text/javascript" src="jquery.js"></script>
   </head>
   <body>
-    <div id="b1" class="background-style"></div>
-    <div id="b2" class="background-style" style="display: none"></div>
+    <div id="bg1" class="background-style"></div>
+    <div id="bg2" class="background-style" style="display: none"></div>
     <div>
       <div class="main">
         <img class="mainimg" src="img/chishazi.png">
@@ -32,30 +32,37 @@
   </body>
   <script>
     // var days = parseInt((new Date() - new Date('2019-08-07'))/(24*60*60*1000)) + 1;
-    console.log("version 0.0.2")
+    console.log("version 0.0.3 beta")
 
-    var colors = ["#FF000022", "#FF7F0022", "#FFFF0022", "#00FF0022", "#00FFFF22", "#0000FF22", "#8B00FF22"];
+    var colors = [
+      "#FF0000"
+      , "#FF7F00"
+      , "#FFFF00"
+      , "#00FF00"
+      , "#00FFFF"
+      , "#0000FF"
+      , "#8B00FF"
+    ];
+    var opacity = "11";
     var len = colors.length;
     var step = parseInt(100/len);
-    var index = 0;
 
-    var bArr = ["b1", "b2"];
-    var curShow = 0;
+    var bgShow = "bg1";
+    var bgHide = "bg2";
     var speed = 5000;
 
     function change() {
-      index = ++index % 7;
-      var css = "linear-gradient(to top left";
+      colors.sort(() => Math.random() - 0.5);
+      var css = "linear-gradient(to top left ";
       for (let i = 0; i < len; i++) {
-        css += ", " + colors[(i + index) % 7] + " " + (step * i) + "%";
+        css += ", " + colors[i] + opacity + " " + (step * i) + "%";
       }
       css += ")";
 
-      curShow = ++curShow % 2;
-      var hide = (curShow + 1) % 2;
-      $("#" + bArr[curShow]).css("background", css);
-      $("#" + bArr[curShow]).fadeIn(speed);
-      $("#" + bArr[hide]).fadeOut(speed);
+      [bgShow, bgHide] = [bgHide, bgShow];
+      $("#" + bgShow).css("background", css);
+      $("#" + bgShow).fadeIn(speed);
+      $("#" + bgHide).fadeOut(speed);
       setTimeout(function () {
         change()
       }, speed + 50);
